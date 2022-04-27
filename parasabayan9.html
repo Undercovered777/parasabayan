@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ON ABS-CBN FRANCHISE RENEWAL:</th>
+        <tr>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>said this message of hope to the media giant: “You fall today, you will rise tomorrow, and that’s for sure. It is as simple as that.”</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>I’m hoping, I'm praying na hipuin ng Panginoon ang Pangulo na tulungan at kausapin ang NTC na bigyan ng provisional authority to operate while the pending renewal bill is dinidinig ng lower House at Senate,</td>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>Sa halip na ang gobyerno ay humakbang para ampatin ang epekto ng pandemya sa unemployment, naging bahagi pa siya sa pagpaparami ng mga walang trabaho sa bansa...Alam ko hindi dito matatapos. Tingin ko yung next year, eleksyon, tingin ko may paniningil ang mga manggagawa sa gobyernong ito.</td>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>Supportive ako, at tingin ko iyon iyong tamang paraan, iyong paghain ni Senator Tito Sotto saka ni Congresswoman Vilma Santos-Recto ng pag-approve ng panibagong franchise para sa ABS-CBN.o</td>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>I made it clear: rule of law. If Congress gives you such privilege and approves it, I will sign it.</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>If ABS-CBN could take care of all these problems as highlighted by the House committee, why not apply for a franchise?</td>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan10.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

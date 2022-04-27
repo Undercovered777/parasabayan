@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ON SAME-SEX MARRIAGE:</th>
+        <tr>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>DISAGREE according to Jessica Soho Presidential Interviews</td>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>For me, the law should treat the people equally whoever you are. Whatever or whoever you want, the state should allow it because it is your choice. We should no longer discuss if it is conventional or not, as long as you are a Filipino, you should be treated fairly.</td>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>Kung ano ‘yung enjoyment natin at ano ang pribiliheyo sa buhay, bigyan din natin sila ng equal na opportunidad at pribiliheyo so ‘yun malinaw sa akin iyon. Civil Union, yes. Same-sex marriage, no</td>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>Kung naniniwala tayo sa pagkakapantay-pantay ng tao, sa tingin ko tama lang na malegalisa ang same-sex marriage at divorce para matamasa ng lahat ang mga benepisyo’t karapatan na kaugnay sa pagpapakasal.</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>Common sense lang. Makakakita ka ba ng any animals na lalaki sa lalakI, babae sa babae? Mas mabuti pa yung hayop. Marunong kumilala kung lalaki, lalaki, o babae, babae....Kung lalaki sa lalaki, babae sa babae, eh mas masahol pa sa hayop ang tao,</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>On same sex civil unions: I have always been very open about freedom of choice – ‘yung pagbigay ng kalayaan para sa lahat na i-pursue ‘yung gusto nila basta hindi ito makakasama sa kapwa niya.</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>Ako po ay hindi galit sa mga LGBT, pero ang paninindigan ko bilang isang Muslim na bawal sa aming relihiyon ang marriage ng parehong klase ng tao dahil nilalaan tayo ng Diyos na babae at lalake at sinabihan tayo ng ating Panginoon na magpakarami tayo.</td>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>Absolutely not. Sabi ko sa mga bakla at saka mga tomboy [I told the gays and the lesbians], you are violating the very Constitution [and] the Family Code.</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>Hindi po ako sumasang-ayon personally. On the other hand, if they want a civil partnership, ibig-sabihin parang negosyante pareho sila, meron silang partnership. If they want to do that, they can do that. But not marriage as we understand it.</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan6.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

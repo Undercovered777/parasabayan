@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">
+<th colspan="10">ON LEGALIZATION OF DIVORCE:</th>
+    <tr>
+      <td><input type="radio" name="president" value="Isko" onclick="display4()"></td><td>AGREE</td>
+      <td><input type="radio" name="president" value="Faisal" onclick="display4()"></td><td>Ayon sa aking paniniwala, ang isang diborsyo ay ginagamit lamang ‘yan kapag naging cancer na ‘yung sakit sa isang pamilya. Kaya kailangan magkaron ng diborsyo para sa gayon, malaya ‘yung dalawa na magawa nila ‘yung gusto nilang gawin pero doon lang sa kapag malala na ‘yung problema</td>
+      <td><input type="radio" name="president" value="Ping" onclick="display4()"></td><td>I will propose as an amendment - “once in a lifetime” divorce. You err once, make amends; you err twice, you deserve to suffer.</td>
+      <td><input type="radio" name="president" value="Ka Leody" onclick="display4()"></td><td>Gaya ng kahit anong kontrata, may karapatan ang bawat tao na nasa hustong edad na pumasok dito. At tulad ng ibang kontrata, malaya din sila dapat makaalis kung hindi na ito pabor sa kanila.</td>
+      <td><input type="radio" name="president" value="BBM" onclick="display4()"></td><td>Well, ako medyo mixed yung aking rection diyan. Kasi nakikita ko, nag-aral ako sa ibang bansa, madaling madali ang mag-divorce... pagkaka magkakaroon ng divorce, siguro kailangan talagang susuriin ng mabuti but that also depends upon your religious conviction. It's not a simple question.</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="president" value="Ernesto" onclick="display4()"></td><td>Divorce, it's not a question of nakakatulong, it should be that those who are defenseless should be protected, especially the wives, especially the children, if their lives and well-being are threatened. I do not personally believe in divorce. Pero on the other hand, may mga mali talaga. May mga taong dangerous, so for that I believe there should be divorce.</td>
+      <td><input type="radio" name="president" value="Mang Jose" onclick="display4()"></td><td>NO</td>
+      <td><input type="radio" name="president" value="Pacman" onclick="display4()"></td><td>I am a Christian. What God has joined together, let no one separate,’</td>
+      <td><input type="radio" name="president" value="Leni" onclick="display4()"></td><td>Pero para maprotektahan sila, kailangan tulungan natin ang mga kababaihan (But to protect them, we need to help women) through economic empowerment. Ito ‘yung magbibigay sa kanilang lakas para hindi i-tolerate ‘yung abuses na nasa-suffer nila.</td>
+      <td><input type="radio" name="president" value="Norberto" onclick="display4()"></td><td>NO DATA</td>
+    </tr>
+    <tr>
+      <td colspan="10">
+      <b><div id="result4"></div></b>
+      </td>
+    </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan5.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </table>
+        <script>
+        function display4() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result4").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ON FEDERALISM:</th>
+        <tr>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>Sa aking palagay, pag-usapang mabuti. Kung sakali mang sumang-ayon ang taumbayan na dapat lumipat tayo sa pederalismo at ‘yan ang ninanaais ng madla, ‘yun ang ating gagawin. Ipapaliwanag natin kung anong maganda sa sistemang ‘yan, anong magiging problema sa paglipat sa sistemang yan at ang tao ang magde-decide.</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>Nais namin i-alok sa maraming tao dito sa Pilipinas ang pederalismo. Gusto namin ang pagtawid natin sa federalism dahil ilalapit namin ang ating pamahalaan sa mga tao para makapagsilbi at makagawa ng mga magagandang programa sa agrikultura, sa industry, sa tungkol sa kalusugan at sa programang edukasyon.</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>Sang-ayon ako doon sa pagpalit ng sistema ng ating gobyerno para madisiplina itong korapsyon, higit sa lahat isusulong natin ‘yung pederalismo, ipu-push natin ‘yung local autonomy,</td>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>Hindi ako proponent ng 'for' or 'against', pero proponent ako na maging balanced ang discussions, proponent ako na maging balanced lahat.</td>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>DISAGREE according to Jessica Soho Presidential Interviews</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>proposing an alternative to federalism without having to amend the Constitution.o</td>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>These are problems created by the very same leaders, from political dynasties, that promise these fake solutions.</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>No to federalism for the Philippines, yes for the whole of ASEAN and for the meantime in the Philippines, let’s try autonomy for all regions first.
+
+</td>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan9.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

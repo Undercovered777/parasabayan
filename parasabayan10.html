@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ON ANTI-TERROR LAW:</th>
+        <tr>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>He supported the proposal of the bill.</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>I'll put it this way, what is terrorism? Basically it's raising up arms and encourage other to take up arms against the government. Of course I'm against that, would you be against that?</td>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>Hence, the Anti-Terrorism Act of 2020 as a proposed bill has one clear message: To "terrorists" who commit crimes against the Filipino people, against humanity, and against the Law of Nations, our policy will be one that is swift, effective and constitutional.</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>Tayong tao, lilimitahan ‘yung karapatan natin, abusuhin ‘yung karapatan natin mahirap ‘yun kaya sa tingin ko kung hindi maamyendahan ito, iabolish ito, basta naabuso ang mga Pilipino</td>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>The Anti-Terror Law, the way I see it, talagang dapat naman meron tayong batas na kontra sa terorismo. 'Yun ang isa sa pinakamalaking problema sa buong mundo hanggang ngayon.o</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>Iparerebisa ko iyan (Anti-Terror Law) hanggang sa ma-repeal 'yan dahil isa itong panunupil sa karapatang pantao, isang paraan ng marahas na pamumuno. Hindi ako sang-ayon sa marahas na pamumuno.</td>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>In the wrong hands, this can be frightening. Because a law with too much discretion is more often than not prone to abuse. For all the supposed merits and the dangers raised, this much is clear.</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabaya11.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

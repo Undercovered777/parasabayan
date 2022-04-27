@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ON DECRIMINALIZING ABORTION:</th>
+        <tr>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>If the mother who is usually quite young is not capable, has mental deficiencies, or is just not capable, emotionally or mentally capable to take care of a child, to have a child, maybe those are the cases where we can say that abortion might be justified.o</td>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>Sa tingin ko mabuti ito para makamit ng kababaihan ang tunay na kalayaan na magdikta para sa kanilang mga katawan at buhay. Marami pang ibang sitwasyon ang kababaihan kung saan sila ay maaaring mangailangan ng abortion at sa tingin ko nararapat na madala nila ito sa kanilang mga doktor na walang takot na makulong o mapahamak.</td>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>I don’t think I’m prepared to make a decision even as we speak now about that matter. We need to know the far-reaching implications on women who were raped and cannot undergo an abortion. We need to study this based on available data. We need to study this based on coordination, by consultation with experts.</td>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>When there is life already, nobody should take it away kasi pinagkaloob ng Diyos 'yun. Yung bata na 'yun walang kakayanan ipagtanggol ang sarili niya . . . It may have a bad effect on society, sa katatayuan ng ina, sa katatayuan ng bata but life is life.</td>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>I have always been against abortion. Pero ‘yung sa akin, para hindi tayo humantong sa extreme situations, kailangan natin na i-strengthen ‘yung local health [services].</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>Against ako sa abortion, kahit rape-related. Bakit? 'Pag abortion pinapatay mo 'yung baby. Kasalanan ba ng baby? Kasalanan ba ng bata para patayin mo s'ya?</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>It shouldn't be on demand, only in times of real need. For example, they were raped or incest. But of course, there must be limits to that. Ang sinasabi ko lang, meron talagang puwang for people to be able to escape unfortunate circumstances.</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>I’m against abortion. Ayaw natin ng abortion. Wala namang kasalanan ‘yung bata, May healing pa naman eh. May pagbabago pa. I-counseling muna yung na-rape na hindi pa naman tapos ang lahat. Na may pag-asa pang magbago ang lahat na hindi naman mapunta agad sa abortion.</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>NO DATA</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan8.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    

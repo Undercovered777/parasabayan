@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PUMILI KA, PARA SA BAYAN
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<style>
+  		table {
+  			text-align: center;
+  		}
+  		body {
+  			background-color: #f8f8ff;
+  		}
+  		th {
+  			font-size: 20px;
+        color: #002DFF;
+  		}
+  	</style>
+</head>
+<body>
+  <div class="container-fluid"></div>
+  <br><h1 style="text-align: center; color: #002DFF;">PUMILI KA KAPATID, PARA SA BAYAN</h1><br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+
+    	<table class="table table-bordered table-hover table-striped">    
+        <th colspan="10">ASSERTION OF OWNERSHIP ON WEST PHILIPPINE SEA:</th>
+        <tr>
+          <td><input type="radio" name="president" value="Isko" onclick="display1()"></td><td>We will be fearless in fighting for what is ours. We will insist on the Hague Ruling. But at the same time as being fearless, we are going to be fair with our discussion and management of the situation on both sides. We will be faithful to our farmers and fisherfolks. Ang mga mangingisda, dapat makapangisda sa loob ng ating teritoryo sa dagat. At iyon ang magaganap: undeterred, peaceful, and productive fishing opportunities under our rules. Filipino fishermen first.</td>
+          <td><input type="radio" name="president" value="BBM" onclick="display1()"></td><td>In my opinion, and this has been my stand ever since, we should talk to China and tell them what we want and that we are not in favor of what they are doing and start from there.</td>
+          <td><input type="radio" name="president" value="Ernesto" onclick="display1()"></td><td>We need to have an independent foreign policy at 'wag tayong nakasandal lang sa isang malaking power. We need to protect that (fishermen), we need to make sure. Dapat nakikipag-usap tayo nang seryoso sa Tsina, for example. And not only China by the way, may ibang interests pa.o</td>
+          <td><input type="radio" name="president" value="Mang Jose" onclick="display1()"></td><td>Kaya natin, [against China's assertion on West Philippine Sea] kaya lang first time maging duwag ng mga Pilipino ngayong administration.</td>
+          <td><input type="radio" name="president" value="Pacman" onclick="display1()"></td><td>I firmly believe that my statement reflects the sentiment of the majority of the Filipinos, that we should stand strong in protecting our sovereign rights while pursuing a peaceful and diplomatic solution to the dispute,</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="president" value="Ping" onclick="display1()"></td><td>We should be more assertive - and consistent - in making our stand on the West Philippine Sea. We should be more assertive. Di ba dati napaka-accommodating natin? We are already being bullied because we don't do too much. It's only now na nagkaroon ng awakening not only on the part of our leaders but other countries as well.</td>
+          <td><input type="radio" name="president" value="Ka Leody" onclick="display1()"></td><td>Palayasin natin ‘yung China sa WPS (West Philippine Sea), ‘yung kanilang ginagawang pagkamkam, pero hindi para angkinin natin kundi lahat ng claimants diyan ay magkaroon ng joint program para sa common development at i-transform into an economic zone ‘yung buong WPS.</td>
+          <td><input type="radio" name="president" value="Norberto" onclick="display1()"></td><td>We must show China that Filipinos are also patriotic</td>
+          <td><input type="radio" name="president" value="Leni" onclick="display1()"></td><td>For China, we will collaborate with them in the areas that we have no conflict, such as trade and investments, much like what Vietnam has been doing. But when it comes to the West Philippine Sea, we cannot deal with them without their recognition of the arbitral ruling. We want to create better ties, especially in the areas of protection of our citizens, embracing exports, bolstering trade, military intelligence capabilities, and of course, protecting the West Philippine Sea.</td>
+          <td><input type="radio" name="president" value="Faisal" onclick="display1()"></td><td>NO DATA</td>
+        </tr>
+        <tr>
+          <td colspan="10">
+          <b><div id="result"></div></b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10"><a href="parasabayan7.html"><button type="button" class="btn btn-success">NEXT</button></a></td>
+        </tr>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </table>
+    
+  <script>
+        function display1() {
+            var ele = document.getElementsByName('president');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Result: "+ele[i].value;
+            }
+        }
+    </script>
+</body>
+</html>    
